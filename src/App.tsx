@@ -1,22 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './styles/index.scss';
-import LikeButton from './components/button'
-import MouseTracker from './components/MouseTracker'
-import MouseOverTracker from './hooks/moseOverTracker'
+// import LikeButton from './components/button'
+// import MouseTracker from './components/MouseTracker'
+// import MouseOverTracker from './hooks/moseOverTracker'
+import Button from './components/Button/button'
 function App() {
-  const [show, setShow] = useState(true);
-  const postions = MouseOverTracker()
+  // const [show, setShow] = useState(true);
+  // const postions = MouseOverTracker()
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <h2>x:{postions.x}  y:{postions.y} </h2>
-        <button onClick={() => {setShow(!show)}}> toggle show</button>
-        <LikeButton></LikeButton>
-       {show && <MouseTracker/>}
-      </header>
+      <p className='domCss'>
+          <Button btnType='primary'>按钮</Button>
+          <Button btnType='link' href='http://www.baidu.com'>link</Button>
+      </p>
     </div>
   );
 }

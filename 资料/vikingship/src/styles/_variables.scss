@@ -10,11 +10,11 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #3880ff !default;
-$indigo:  #3dc2ff !default;
-$purple:  #5260ff !default;
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$red:     #f5222d !default;
+$red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #fadb14 !default;
 $green:   #52c41a !default;
@@ -30,7 +30,7 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
-$theme-colors:
+$theme-colors: 
 (
   "primary":    $primary,
   "secondary":  $secondary,
